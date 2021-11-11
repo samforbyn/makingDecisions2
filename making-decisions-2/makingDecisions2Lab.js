@@ -48,8 +48,12 @@ let evensArr = []
 */
 
 //Code Here
-
-
+for(i in nums){
+  if(nums[i] % 2 === 0){
+    evensArr.push(nums[i])
+  }
+}
+console.log(evensArr)
 
 ////////// PROBLEM 5 //////////
 
@@ -62,14 +66,24 @@ var score = 74
 */
 
 //Code Here
-
+if(score >= 90){
+  console.log("A")
+}else if(score >= 80 && score <= 89){
+  console.log("B")
+}else if(score >= 70 && score <= 79){
+  console.log("C")
+}else if(score >= 60 && score <=69){
+  console.log("D")
+}else if(score < 60){
+  console.log("F")
+}
 
 ////////// Intermediate Problems //////////
 
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24];
+var myFavoriteNumbers = [4,8,12,16,20,24,69];
 // Do not edit the code above.
 
 /*
@@ -77,15 +91,21 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
-
+someNum = myFavoriteNumbers[4]
+console.log(`The fifth value is ${someNum}`)
 ////////// PROBLEM 7 //////////
 
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
+if(myFavoriteNumbers.length < 7){
+  console.log("There are not enough elements in this array")
+}else if(myFavoriteNumbers.length > 7){
+  someNum = myFavoriteNumbers[6]
+}else{
+  console.log(`Exactly 7 items in this list. The 7th value is ${myFavoriteNumbers[6]}`)
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -96,7 +116,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-
+for(i in listOfNumbers){
+  if(listOfNumbers[i] % 3 === 0){
+    console.log(`${listOfNumbers[i]} is divisible by 3.`)
+  }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -108,7 +132,10 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for(let i = letters.length -1; i >= 0; i--){
+  let x = letters[i]
+  console.log(x)
+}
 
 ////////// Advanced Problems //////////
 
@@ -116,7 +143,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // Switch statements can be excellent alternatives to if blocks. Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
 
 // Do not edit the code below.
-let letterGrade = 'B'
+let letterGrade = 'A'
 // Do not edit the code above.
 
 /* Use a switch statement on 'letterGrade' and console.log the appropriate response.
@@ -130,7 +157,25 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
-
+switch (letterGrade){
+  case 'A':
+    console.log("The student is doing excellently.")
+    break;
+  case 'B':
+    console.log("The student is doing well.")
+    break;
+  case 'C':
+    console.log("The student is doing alright.")
+    break;
+  case 'D':
+    console.log("The student is not doing very well.")
+    break;
+  case 'F':
+    console.log("The student is failing")
+    break;
+  default:
+    console.log("Not an eligible grade")
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -158,3 +203,15 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+
+for(let i = 1; i < 101; i++){
+  if(i % 5 == 0 && i % 3 == 0){
+    console.log("Devmountain")
+  }else if(i % 3 == 0){
+    console.log("Dev")
+  }else if(i % 5 == 0){
+    console.log("mountain")
+  }else{
+    console.log(i)
+  }
+} 
