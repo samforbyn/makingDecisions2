@@ -31,7 +31,7 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-for(i in family){
+for(let i in family){
   console.log(family[i])
 }
 
@@ -48,7 +48,7 @@ let evensArr = []
 */
 
 //Code Here
-for(i in nums){
+for(let i in nums){
   if(nums[i] % 2 === 0){
     evensArr.push(nums[i])
   }
