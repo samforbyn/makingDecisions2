@@ -5,7 +5,7 @@ var arr = [10,20,30,40,50,60]
 /*
   Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
 */
-firstItem = arr[0]
+let firstItem = arr[0]
 //Code Here
 
 
@@ -16,7 +16,7 @@ firstItem = arr[0]
 
 //Code Here
 console.log(arr)
-lastItemRemoved = arr.pop()
+let lastItemRemoved = arr.pop()
 console.log(arr)
 
 
@@ -91,7 +91,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24,69];
 */
 
 //Code Here
-someNum = myFavoriteNumbers[4]
+let someNum = myFavoriteNumbers[4]
 console.log(`The fifth value is ${someNum}`)
 ////////// PROBLEM 7 //////////
 
@@ -116,7 +116,7 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-for(i in listOfNumbers){
+for(let i in listOfNumbers){
   if(listOfNumbers[i] % 3 === 0){
     console.log(`${listOfNumbers[i]} is divisible by 3.`)
   }
