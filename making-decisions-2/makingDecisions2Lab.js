@@ -31,7 +31,7 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-for(let i in family){
+for(let i of family){
   console.log(family[i])
 }
 
@@ -48,7 +48,7 @@ let evensArr = []
 */
 
 //Code Here
-for(let i in nums){
+for(let i of nums){
   if(nums[i] % 2 === 0){
     evensArr.push(nums[i])
   }
@@ -116,7 +116,7 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-for(let i in listOfNumbers){
+for(let i of listOfNumbers){
   if(listOfNumbers[i] % 3 === 0){
     console.log(`${listOfNumbers[i]} is divisible by 3.`)
   }
